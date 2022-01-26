@@ -18,7 +18,7 @@ public class WordCount {
 //		1. 잡 객체 생성
 //		2. 맵리듀스 잡에 필요한 실행 정보를 지정
 //		3. 맵리듀스 잡을 실행
-//		WordCount <원본> <output>	
+//		WordCount <원본> <output>
 
 	public static void main(String[] args) throws Exception {
 		// 매개변수 체크
