@@ -37,8 +37,5 @@ public class DelayCountSortMapper extends Mapper<LongWritable, Text, DateKey, In
 			
 			context.write(outputKey, one);
 		}
-		
-		super.map(key, value, context);
 	}
-	
 }

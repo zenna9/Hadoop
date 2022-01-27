@@ -34,7 +34,7 @@ public class DelayCountMultimapper extends Mapper<LongWritable, Text, Text, IntW
 			outputKey.set("D,"+parser.getYear()+", "+parser.getMonth()); // -> D, 년, 월
 			//출력
 			context.write(outputKey, one);
-		} else if(parser.getArrDelay() > 0 ) { //도착지연이라면
+		} if(parser.getArrDelay() > 0 ) { //도착지연이라면
 			outputKey.set("A,"+parser.getYear()+","+parser.getMonth()); // -> A, 년, 월
 			//출력
 			context.write(outputKey, one);
